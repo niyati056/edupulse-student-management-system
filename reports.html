@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports & Analytics | EduPulse Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reports.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay"></div>
+
+    <div class="main">
+        <!-- Sidebar Navigation -->
+        <aside class="left-nav-menu">
+            <div class="logo-section">
+                <div class="logo-badge">
+                    <img src="images/hat-img.svg" alt="University Logo" class="hat-image">
+                </div>
+                <div class="logo-text-group">
+                    <p class="head-top-text">EduPulse</p>
+                    <span class="logo-sub-text">University Portal</span>
+                </div>
+                <button class="sidebar-close-btn" aria-label="Close navigation">&times;</button>
+            </div>
+
+            <nav class="menu-items">
+                <span class="menu-category-title">Main Menu</span>
+                <div class="dashboard-section dasboard-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/home-img (1).svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="home.html" class="sidebar-menu-listname">Dashboard</a>
+                </div>
+                <div class="dashboard-section students-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/persons-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="students.html" class="sidebar-menu-listname">Students</a>
+                </div>
+                <div class="dashboard-section faculty-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/person-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="faculty.html" class="sidebar-menu-listname">Faculty</a>
+                </div>
+                <div class="dashboard-section courses-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/book-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="courses.html" class="sidebar-menu-listname">Courses</a>
+                </div>
+                <div class="dashboard-section reports-sec active">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/report-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="reports.html" class="sidebar-menu-listname">Reports</a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile-badge">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-info">
+                        <span class="user-name">Administrator</span>
+                        <span class="user-role">Online · Admin</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Screen -->
+        <main class="right-screen">
+            <!-- Top Navbar -->
+            <header class="top-navbar">
+                <div class="top-navbar-left">
+                    <button class="menu-btn" aria-label="Toggle navigation">
+                        <img src="images/three-line-horizontal-svgrepo-com (3).svg" class="ham-menu" alt="Menu">
+                    </button>
+                    <h1 class="top-navbar-text">
+                        Student Management Portal
+                        <span class="portal-tag">Analytics</span>
+                    </h1>
+                </div>
+                <div class="top-navbar-right">
+                    <button class="cancel-btn js-print-report" style="height: 38px; gap: 6px; font-size: 13px;">
+                        <span>&#128438;</span> Print Summary
+                    </button>
+                </div>
+            </header>
+
+            <div class="bottom-screen">
+                <div class="welcome-text">
+                    <div class="welcome-header-group">
+                        <h2 class="d-text">System Analytics & Reports</h2>
+                        <p class="d-subtitle">Real-time demographic breakdowns, course enrollment metrics, and institutional ratios.</p>
+                    </div>
+                </div>
+
+                <!-- KPI Metric Boxes -->
+                <div class="record-boxes-main">
+                    <div class="num-students" onclick="window.location.href='students.html'">
+                        <div class="left-side-logo">
+                            <img src="images/persons-img.svg" alt="" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Enrolled Students</p>
+                            <p class="stu-count js-rep-students">0</p>
+                        </div>
+                    </div>
+                    <div class="num-faculty" onclick="window.location.href='faculty.html'">
+                        <div class="left-side-logo">
+                            <img src="images/person-img.svg" alt="" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Total Faculty</p>
+                            <p class="stu-count js-rep-faculty">0</p>
+                        </div>
+                    </div>
+                    <div class="num-courses" onclick="window.location.href='courses.html'">
+                        <div class="left-side-logo">
+                            <img src="images/book-img.svg" alt="" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Active Courses</p>
+                            <p class="stu-count js-rep-courses">0</p>
+                        </div>
+                    </div>
+                    <div class="num-students" style="border-left: 3px solid #f59e0b;">
+                        <div class="left-side-logo" style="background: #fffbeb; border-color: #fef3c7;">
+                            <img src="images/report-img.svg" alt="" class="image-record" style="filter: invert(58%) sepia(74%) saturate(1832%) hue-rotate(11deg) brightness(97%) contrast(98%);">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Student-Faculty Ratio</p>
+                            <p class="stu-count js-rep-ratio" style="font-size: 26px;">0 : 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Analytics Grid -->
+            <div class="reports-analytics-grid">
+                <!-- Card 1: Student Gender Distribution -->
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3 class="analytics-title">Student Gender Distribution</h3>
+                        <span class="analytics-tag">Demographics</span>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-labels">
+                            <span>Male Students</span>
+                            <span class="js-stu-male-count" style="color: #2563eb; font-weight: 700;">0 (0%)</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill progress-fill-blue js-stu-male-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-labels">
+                            <span>Female Students</span>
+                            <span class="js-stu-female-count" style="color: #9333ea; font-weight: 700;">0 (0%)</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill progress-fill-purple js-stu-female-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Faculty Gender Breakdown -->
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3 class="analytics-title">Faculty Gender Distribution</h3>
+                        <span class="analytics-tag">Staffing</span>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-labels">
+                            <span>Male Instructors</span>
+                            <span class="js-fac-male-count" style="color: #059669; font-weight: 700;">0 (0%)</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill progress-fill-emerald js-fac-male-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-labels">
+                            <span>Female Instructors</span>
+                            <span class="js-fac-female-count" style="color: #9333ea; font-weight: 700;">0 (0%)</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill progress-fill-purple js-fac-female-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Academic Programs Level -->
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3 class="analytics-title">Program Level Breakdown</h3>
+                        <span class="analytics-tag">Curriculum</span>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-labels">
+                            <span>Under-Graduate Courses</span>
+                            <span class="js-course-under-count" style="color: #059669; font-weight: 700;">0 (0%)</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill progress-fill-emerald js-course-under-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-labels">
+                            <span>Post-Graduate Courses</span>
+                            <span class="js-course-post-count" style="color: #2563eb; font-weight: 700;">0 (0%)</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill progress-fill-blue js-course-post-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Enrollment by Course -->
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3 class="analytics-title">Enrollment by Course</h3>
+                        <span class="analytics-tag">Live Allocation</span>
+                    </div>
+                    <div class="course-distribution-list js-course-distribution">
+                        <!-- Populated dynamically by reports-page.js -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="scripts/reports-page.js"></script>
+    <script type="module" src="scripts/std.js"></script>
+</body>
+
+</html>

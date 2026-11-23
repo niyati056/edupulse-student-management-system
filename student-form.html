@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student | EduPulse Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body class="form-body-wrapper">
+    <div class="form-top-nav">
+        <a href="students.html" class="back-link">
+            <span>&larr;</span> Back to Students Directory
+        </a>
+    </div>
+
+    <div class="form-container-card">
+        <div class="form-header">
+            <div class="form-icon-emblem">
+                <img src="images/hat-img.svg" alt="Student Icon">
+            </div>
+            <h1 class="form-page-title">Add New Student</h1>
+            <p class="form-page-subtitle">Fill in the details below to register a student into the university portal.</p>
+        </div>
+
+        <form class="form-design" onsubmit="return false;">
+            <div class="form-group">
+                <label class="form-label">
+                    Enrollment Number <span class="required-star">*</span>
+                </label>
+                <input type="text" placeholder="e.g. 231430121145" class="in enrollment-no" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    Student Full Name <span class="required-star">*</span>
+                </label>
+                <input type="text" placeholder="e.g. Alex Johnson" class="in student-name" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    Gender <span class="required-star">*</span>
+                </label>
+                <div class="select-items">
+                    <label class="item-1">
+                        <input type="radio" name="gen" value="male">
+                        <span>Male</span>
+                    </label>
+                    <label class="item-2">
+                        <input type="radio" name="gen" value="female">
+                        <span>Female</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    Select Course Program <span class="required-star">*</span>
+                </label>
+                <select class="student-course" required>
+                    <!-- Populated dynamically by student-form.js -->
+                </select>
+            </div>
+
+            <div class="btn">
+                <a href="students.html" class="cancel-btn">Cancel</a>
+                <button type="submit" class="submission">Save & Register Student</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="scripts/student-form.js" type="module"></script>
+</body>
+
+</html>

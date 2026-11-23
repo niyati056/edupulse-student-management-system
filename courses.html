@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Directory | EduPulse Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/courses.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay"></div>
+
+    <div class="main">
+        <!-- Sidebar Navigation -->
+        <aside class="left-nav-menu">
+            <div class="logo-section">
+                <div class="logo-badge">
+                    <img src="images/hat-img.svg" alt="University Logo" class="hat-image">
+                </div>
+                <div class="logo-text-group">
+                    <p class="head-top-text">EduPulse</p>
+                    <span class="logo-sub-text">University Portal</span>
+                </div>
+                <button class="sidebar-close-btn" aria-label="Close navigation">&times;</button>
+            </div>
+
+            <nav class="menu-items">
+                <span class="menu-category-title">Main Menu</span>
+                <div class="dashboard-section dasboard-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/home-img (1).svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="home.html" class="sidebar-menu-listname">Dashboard</a>
+                </div>
+                <div class="dashboard-section students-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/persons-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="students.html" class="sidebar-menu-listname">Students</a>
+                </div>
+                <div class="dashboard-section faculty-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/person-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="faculty.html" class="sidebar-menu-listname">Faculty</a>
+                </div>
+                <div class="dashboard-section courses-sec active">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/book-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="courses.html" class="sidebar-menu-listname">Courses</a>
+                </div>
+                <div class="dashboard-section reports-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/report-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="reports.html" class="sidebar-menu-listname">Reports</a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile-badge">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-info">
+                        <span class="user-name">Administrator</span>
+                        <span class="user-role">Online · Admin</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Screen -->
+        <main class="right-screen">
+            <!-- Top Navbar -->
+            <header class="top-navbar">
+                <div class="top-navbar-left">
+                    <button class="menu-btn" aria-label="Toggle navigation">
+                        <img src="images/three-line-horizontal-svgrepo-com (3).svg" class="ham-menu" alt="Menu">
+                    </button>
+                    <h1 class="top-navbar-text">
+                        Student Management Portal
+                        <span class="portal-tag">Courses</span>
+                    </h1>
+                </div>
+                <div class="top-navbar-right">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="js-current-date">System Active</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="bottom-screen">
+                <div class="welcome-text">
+                    <div class="welcome-header-group">
+                        <h2 class="d-text">Courses Directory</h2>
+                        <p class="d-subtitle">Maintain degree programs, course codes, and academic levels.</p>
+                    </div>
+                    <div class="adding-icons-stu">
+                        <a href="course-form.html" class="linking">Add New Course</a>
+                    </div>
+                </div>
+
+                <!-- KPI Metric Boxes -->
+                <div class="record-boxes-main">
+                    <div class="num-courses">
+                        <div class="left-side-logo">
+                            <img src="images/book-img.svg" alt="" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Total Courses</p>
+                            <p class="js-total-courses stu-count">0</p>
+                        </div>
+                    </div>
+                    <div class="num-faculty">
+                        <div class="left-side-logo">
+                            <img src="images/person-img.svg" alt="" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Under-Graduate</p>
+                            <p class="js-under-grad stu-count">0</p>
+                        </div>
+                    </div>
+                    <div class="num-students">
+                        <div class="left-side-logo">
+                            <img src="images/persons-img.svg" alt="" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Post-Graduate</p>
+                            <p class="js-post-grad stu-count">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table & Filter Section -->
+            <section class="info-box">
+                <div class="filteration">
+                    <div class="search-wrapper">
+                        <span class="search-icon-inside">&#128269;</span>
+                        <input type="text" class="search-bar-course" placeholder="Search courses by name or code...">
+                    </div>
+                    <div class="filteration-right">
+                        <select name="course-type" class="course-type" aria-label="Filter by program category">
+                            <option value="">All Categories</option>
+                            <option value="under">Under-Graduate</option>
+                            <option value="post">Post-Graduate</option>
+                        </select>
+                        <button class="sorting" title="Toggle sorting order">
+                            <img src="images/sort-alt-svgrepo-com.svg" alt="" class="sort-img">
+                            <span class="sort-text">Sort A-Z</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dynamic-info-table">
+                    <div class="table-responsive">
+                        <table class="dynamic-table-body">
+                            <thead>
+                                <tr class="head-table">
+                                    <th class="table-data">No.</th>
+                                    <th class="table-data">Course Code</th>
+                                    <th class="table-data">Course Name</th>
+                                    <th class="table-data">Program Level</th>
+                                    <th class="table-data del-action">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Populated dynamically by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="scripts/courses-page.js"></script>
+    <script type="module" src="scripts/std.js"></script>
+</body>
+
+</html>

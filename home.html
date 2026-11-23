@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | EduPulse Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay"></div>
+
+    <div class="main">
+        <!-- Sidebar Navigation -->
+        <aside class="left-nav-menu">
+            <div class="logo-section">
+                <div class="logo-badge">
+                    <img src="images/hat-img.svg" alt="University Logo" class="hat-image">
+                </div>
+                <div class="logo-text-group">
+                    <p class="head-top-text">EduPulse</p>
+                    <span class="logo-sub-text">University Portal</span>
+                </div>
+                <button class="sidebar-close-btn" aria-label="Close navigation">&times;</button>
+            </div>
+
+            <nav class="menu-items">
+                <span class="menu-category-title">Main Menu</span>
+                <div class="dashboard-section dasboard-sec active">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/home-img (1).svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="home.html" class="sidebar-menu-listname">Dashboard</a>
+                </div>
+                <div class="dashboard-section students-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/persons-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="students.html" class="sidebar-menu-listname">Students</a>
+                </div>
+                <div class="dashboard-section faculty-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/person-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="faculty.html" class="sidebar-menu-listname">Faculty</a>
+                </div>
+                <div class="dashboard-section courses-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/book-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="courses.html" class="sidebar-menu-listname">Courses</a>
+                </div>
+                <div class="dashboard-section reports-sec">
+                    <div class="sidebar-icon-wrapper">
+                        <img src="images/report-img.svg" alt="" class="sidebar-image-icons">
+                    </div>
+                    <a href="reports.html" class="sidebar-menu-listname">Reports</a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile-badge">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-info">
+                        <span class="user-name">Administrator</span>
+                        <span class="user-role">Online · Admin</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Screen -->
+        <main class="right-screen">
+            <!-- Top Navbar -->
+            <header class="top-navbar">
+                <div class="top-navbar-left">
+                    <button class="menu-btn" aria-label="Toggle navigation">
+                        <img src="images/three-line-horizontal-svgrepo-com (3).svg" class="ham-menu" alt="Menu">
+                    </button>
+                    <h1 class="top-navbar-text">
+                        Student Management Portal
+                        <span class="portal-tag">Admin Console</span>
+                    </h1>
+                </div>
+                <div class="top-navbar-right">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="js-current-date">System Active</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="bottom-screen">
+                <div class="welcome-text">
+                    <div class="welcome-header-group">
+                        <h2 class="d-text">Executive Dashboard</h2>
+                        <p class="d-subtitle">Welcome back! Real-time overview of enrollments, faculty, and academic programs.</p>
+                    </div>
+                </div>
+
+                <!-- KPI Metric Boxes -->
+                <div class="record-boxes-main">
+                    <div class="num-students" onclick="window.location.href='students.html'">
+                        <div class="left-side-logo">
+                            <img src="images/persons-img.svg" alt="Students" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Total Students</p>
+                            <p class="stu-count stud-count">0</p>
+                            <span class="stat-trend" style="color: #2563eb;">View Directory &rarr;</span>
+                        </div>
+                    </div>
+
+                    <div class="num-faculty" onclick="window.location.href='faculty.html'">
+                        <div class="left-side-logo">
+                            <img src="images/person-img.svg" alt="Faculty" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Faculty Members</p>
+                            <p class="stu-count fac-count">0</p>
+                            <span class="stat-trend" style="color: #059669;">View Faculty &rarr;</span>
+                        </div>
+                    </div>
+
+                    <div class="num-courses" onclick="window.location.href='courses.html'">
+                        <div class="left-side-logo">
+                            <img src="images/book-img.svg" alt="Courses" class="image-record">
+                        </div>
+                        <div class="right-side-data">
+                            <p class="total-stu">Active Courses</p>
+                            <p class="stu-count cou-count">0</p>
+                            <span class="stat-trend" style="color: #7c3aed;">View Courses &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions Section -->
+            <section class="quick-actions">
+                <div class="action-text">
+                    <h3 class="text-main">Quick Actions</h3>
+                </div>
+                <div class="quick-action-buttons">
+                    <div class="add-stu" onclick="window.location.href='student-form.html'">
+                        <div class="add-action-icon-box">
+                            <img src="images/plus-circle-svgrepo-com.svg" alt="Add Student" class="add-icon">
+                        </div>
+                        <div class="add-text-group">
+                            <p class="add-text">Add Student</p>
+                            <span class="add-desc">Register a new student enrollment</span>
+                        </div>
+                        <span class="action-arrow">&rarr;</span>
+                    </div>
+
+                    <div class="add-faculty" onclick="window.location.href='faculty-form.html'">
+                        <div class="add-action-icon-box" style="background: #ecfdf5; border-color: #d1fae5;">
+                            <img src="images/plus-circle-svgrepo-com.svg" alt="Add Faculty" class="add-icon" style="filter: invert(48%) sepia(68%) saturate(674%) hue-rotate(113deg) brightness(92%) contrast(93%);">
+                        </div>
+                        <div class="add-text-group">
+                            <p class="add-text">Add Faculty</p>
+                            <span class="add-desc">Assign new instructor or lecturer</span>
+                        </div>
+                        <span class="action-arrow">&rarr;</span>
+                    </div>
+
+                    <div class="add-course" onclick="window.location.href='course-form.html'">
+                        <div class="add-action-icon-box" style="background: #faf5ff; border-color: #f3e8ff;">
+                            <img src="images/plus-circle-svgrepo-com.svg" alt="Add Course" class="add-icon" style="filter: invert(33%) sepia(87%) saturate(2035%) hue-rotate(264deg) brightness(96%) contrast(93%);">
+                        </div>
+                        <div class="add-text-group">
+                            <p class="add-text">Add Course</p>
+                            <span class="add-desc">Create degree or certificate syllabus</span>
+                        </div>
+                        <span class="action-arrow">&rarr;</span>
+                    </div>
+
+                    <div class="view-reports-action" onclick="window.location.href='reports.html'">
+                        <div class="add-action-icon-box" style="background: #fffbeb; border-color: #fef3c7;">
+                            <img src="images/report-img.svg" alt="Reports" class="add-icon" style="filter: invert(58%) sepia(74%) saturate(1832%) hue-rotate(11deg) brightness(97%) contrast(98%);">
+                        </div>
+                        <div class="add-text-group">
+                            <p class="add-text">View Reports</p>
+                            <span class="add-desc">Analytics, statistics and insights</span>
+                        </div>
+                        <span class="action-arrow">&rarr;</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/std.js"></script>
+</body>
+
+</html>
